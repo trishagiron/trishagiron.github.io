@@ -6470,7 +6470,7 @@ a.bg-dark:hover {
 .mt-auto,
 .my-auto {
     margin-top: auto!important;
-	margin-right: 50%;
+	margin-right: 30%; /*hiii*/
 }
 .mr-auto,
 .mx-auto {
@@ -7641,7 +7641,7 @@ a.text-dark:hover {
     visibility: hidden!important
 }
 .bottomleft {
-	max-width: 35%;
+	max-height: 100%;
     height: auto;
 	right: 0;
 	bottom: 0;
@@ -7649,12 +7649,12 @@ a.text-dark:hover {
 	z-index: 0;
 }
 .triangle-crop {
-	-webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
+	-webkit-clip-path: polygon(0% 100%,100% 70%, 70% 0);
 	clip-path: polygon(0 100%, 100% 100%, 100% 0);
 	-webkit-mask-size: 95%;
-  	-webkit-mask-image: -webkit-gradient(linear, left top, right bottom, 
+  /*	-webkit-mask-image: -webkit-gradient(linear, left top, right bottom, 
  	 color-stop(0.10,  rgba(0,0,0,0)),
-  	color-stop(1.50,  rgba(0,0,0,1)));
+  	color-stop(1.50,  rgba(0,0,0,1)));*/
 }
 
 .triangle-crop:hover {
