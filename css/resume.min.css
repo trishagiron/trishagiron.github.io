@@ -9,8 +9,7 @@ body {
     padding-top: 54px;
     color: #868e96;
 	height: 100%;
-  	//background-color: #111;
-  	//background-image: url("http://img12.deviantart.net/3af8/i/2010/193/9/f/sky_56_by_sed_rah_stock.jpg");
+  	/*background-image: url("http://img12.deviantart.net/3af8/i/2010/193/9/f/sky_56_by_sed_rah_stock.jpg");*/
   	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -135,7 +134,7 @@ section.resume-section .resume-item .resume-date {
 }
 @media (min-width: 992px) {
     section.resume-section {
-		padding-left: 2rem!important; //HERE IT IS
+		padding-left: 2rem!important; /*HERE IT IS*/
         padding-top: 3rem!important;
         padding-bottom: 3rem!important
     }
