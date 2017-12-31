@@ -3247,7 +3247,8 @@ tbody.collapse.show {
 }
 .nav-link {
     display: block;
-    padding: .5rem 1rem
+    padding: .2rem .3rem;
+	font-size: 13px;
 }
 .nav-link:focus,
 .nav-link:hover {
@@ -3694,12 +3695,6 @@ tbody.collapse.show {
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
     color: rgba(255, 255, 255, .25)
-}
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show>.nav-link {
-    color: #fff
 }
 .navbar-dark .navbar-toggler {
     color: rgba(255, 255, 255, .5);
@@ -6475,7 +6470,7 @@ a.bg-dark:hover {
 .mt-auto,
 .my-auto {
     margin-top: auto!important;
-	margin-right: 30%;
+	margin-right: 40%;
 }
 .mr-auto,
 .mx-auto {
