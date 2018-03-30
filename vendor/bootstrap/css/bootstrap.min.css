@@ -7668,7 +7668,7 @@ a.text-dark:hover {
 }
 .triangle-crop {
 	-webkit-clip-path: polygon(0% 100%,100% 70%, 50% 0);
-	clip-path: polygon(0% 100%,100% 70%, 70% 0);
+	clip-path: polygon(0% 100%,100% 70%, 50% 0);
 	-webkit-mask-size: 95%;
 	
   /*	-webkit-mask-image: -webkit-gradient(linear, left top, right bottom, 
