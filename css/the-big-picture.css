@@ -5,7 +5,8 @@
  */
 
 body {
-	background: url("../bg.jpg") no-repeat center center fixed;
+	/*background: url("../bg.jpg") no-repeat center center fixed;*/
+	background-color: antiquewhite;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;

@@ -23,16 +23,16 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
       <div class="container">
-        <a class="navbar-brand" href="#">trisha。</a>
+        <a class="navbar-brand" href="http://trishagiron.github.io">trisha。</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <a href="#intro" id="lastOpen" class="nav-link active" onclick="menuClick()" toggle="intro">Intro</a>
-            <a href="#education" id="none" class="nav-link" onclick="menuClick()" toggle="education">Education</a>
-            <a href="#experience" id="none1" class="nav-link" onclick="menuClick()" toggle="experience">Experience</a>
-            <a href="#connect" id="none2" class="nav-link" onclick="menuClick()" toggle="connect">Connect</a>
+            <a href="#intro" class="nav-link active" onclick="menuClick()" id="introLink" toggle="intro">Intro</a>
+            <a href="#education" class="nav-link" onclick="menuClick()" id="educLink" toggle="education">Education</a>
+            <a href="#experience" class="nav-link" onclick="menuClick()" id="expLink" toggle="experience">Experience</a>
+            <a href="#connect" class="nav-link" onclick="menuClick()" id="connLink" toggle="connect">Connect</a>
           </ul>
         </div>
       </div>
@@ -55,7 +55,14 @@
         <div class="row">
           <div class="col-lg-6">
             <h1 class="mt-5" style="display: block">EDUCATION</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates rerum eveniet sapiente repellat esse, doloremque quod recusandae deleniti nostrum assumenda vel beatae sed aut modi nesciunt porro quisquam voluptatem.</p>
+				<p>University of California, Berkeley
+         		<br>Class of 2019
+         		<br>B.A. Cognitive Science, Linguistics
+         		<br>Minors in Computer Science, Theater and Performance Studies
+         		<br>Certificate in Design Innovation</p>
+         		<p>University of Cambridge
+         		<br>Summer 2013 | Oxbridge Academic Programs
+         		<br>Photojournalism, Philosophy of the Mind</p>
           </div>
         </div>
       </div>
@@ -88,20 +95,26 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
     <script>
 		//MENU TOGGLE FUNCTION
-		var menuClick = function() {
+		var lastClicked = "introLink";
+		var menuClick = function(e) {
 		  document.onclick = function(e) {
-			  var clicked = e.target.getAttribute('toggle');
-			  var last = document.getElementById('lastOpen');
-			  var lastDisplay = last.getAttribute('toggle');
-			  
-			  last.setAttribute('class', "nav-link");
-			  last.setAttribute('id', "");
-			  
-			  e.target.setAttribute('id', "lastOpen");
-			  e.target.setAttribute('class', "nav-link active");
-			  
-			  document.getElementById(lastDisplay).style.display = "none";
-			  document.getElementById(clicked).style.display = "block";
+			  if (e.target.getAttribute('toggle') != null) {
+				  var clicked = e.target.getAttribute('toggle');
+				  var lastDisplay = document.getElementById(lastClicked).getAttribute('toggle');
+				  //var last = document.getElementById('lastOpen');
+				  //var lastDisplay = last.getAttribute('toggle');
+
+				  document.getElementById(lastClicked).setAttribute('class', "nav-link");
+				  //last.setAttribute('id', "");
+
+				  //e.target.setAttribute('id', "lastOpen");
+				  e.target.setAttribute('class', "nav-link active");
+
+				  document.getElementById(lastDisplay).style.display = "none";
+				  document.getElementById(clicked).style.display = "block";
+
+				  lastClicked = e.target.getAttribute('id');
+			  }			  
 		  }
 		}
 	</script>
